@@ -22,6 +22,19 @@ Open `index.html` in a browser. No build step or dependencies.
 | Swat | Left-click (within swat range) |
 | Milk shield (Spicy) | Hold Space or right mouse button |
 
+## Repositories
+
+- **Upstream (authoritative):** `bsommers/SpacePotatoes`. Commit and push here.
+- **Origin (org mirror):** `spicyspacepotatoes/SpacePotatoes`.
+
+`scripts/sync_repo.sh` pulls from upstream and pushes to the org. It is the same script flowscope uses, with a different config block.
+
+```sh
+./scripts/sync_repo.sh            # pull from upstream, push to origin
+./scripts/sync_repo.sh --status   # compare local, upstream and origin
+./scripts/sync_repo.sh --dry-run  # preview only
+```
+
 ## License
 
 Licensed under the [Apache License 2.0](LICENSE).
